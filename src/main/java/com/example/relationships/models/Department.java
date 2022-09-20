@@ -1,5 +1,6 @@
 package com.example.relationships.models;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Department {
@@ -9,27 +10,27 @@ public class Department {
         this.name = name;
     }
 
-    public void setDepartment(List<Employee> department) {
-        this.department = department;
+    public void setEmployees(List<Employee> employees) {
+        this.employees = employees;
     }
 
     public String getName() {
         return name;
     }
 
-    public List<Employee> getDepartment() {
-        return department;
+    public List<Employee> getEmployees() {
+        return employees;
     }
 
     private String name;
-    private List<Employee> department;
+    private List<Employee> employees;
 
-    public Department(String name, List<Employee> department) {
+    public Department(String name) {
         this.name = name;
-        this.department = department;
+        this.employees = new ArrayList<>();
     }
     public Department(){}
     public void addEmployee(Employee employee){
-        department.add(employee);
+        employees.add(employee);
     }
 }

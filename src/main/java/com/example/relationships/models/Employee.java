@@ -1,10 +1,19 @@
 package com.example.relationships.models;
 
+import java.util.List;
+
 public class Employee {
     private long id;
     private String firstName;
     private String lastName;
     private int employeeNumber;
+    private Project project;
+
+    public List<Project> getProjects() {
+        return projects;
+    }
+
+    private List<Project> projects;
 
     public Employee(){}
 
@@ -51,5 +60,5 @@ public class Employee {
         this.project = project;
     }
 
-    private Project project;
+
 }

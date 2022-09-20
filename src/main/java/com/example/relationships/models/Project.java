@@ -43,6 +43,7 @@ public class Project {
         this.durationDays = durationDays;
         this.project = new ArrayList<>();
     }
+    public Project(){}
 
     public void addEmployee(Employee employee){
         project.add(employee);
