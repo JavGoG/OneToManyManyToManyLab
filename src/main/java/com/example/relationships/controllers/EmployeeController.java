@@ -1,8 +1,6 @@
 package com.example.relationships.controllers;
 
-import com.example.relationships.models.Department;
 import com.example.relationships.models.Employee;
-import com.example.relationships.repositories.DepartmentRepository;
 import com.example.relationships.repositories.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -34,6 +32,7 @@ public class EmployeeController {
         employeeRepository.save(employee);
         return new ResponseEntity<>(employee, HttpStatus.CREATED);
     }
+
 
 
 }

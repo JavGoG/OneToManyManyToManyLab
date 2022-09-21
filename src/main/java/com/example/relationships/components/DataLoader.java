@@ -5,7 +5,7 @@ import com.example.relationships.models.Employee;
 import com.example.relationships.models.Project;
 import com.example.relationships.repositories.DepartmentRepository;
 import com.example.relationships.repositories.EmployeeRepository;
-import com.example.relationships.repositories.ProjectRepostiory;
+import com.example.relationships.repositories.ProjectRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
@@ -19,7 +19,7 @@ public class DataLoader implements ApplicationRunner {
     @Autowired
     EmployeeRepository employeeRepository;
     @Autowired
-    ProjectRepostiory projectRepostiory;
+    ProjectRepository projectRepostiory;
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
